@@ -1,0 +1,38 @@
+<div class="welcome-logo">
+    your <span class="logo">logo</span>	<span><sup style="font-size: 15px;">&reg;</sup></span>
+</div>
+<div class="row">
+<div class="col-md-6">
+    <h1 style="font-size: 15px;margin-left: 8px;">Lorem Ipsum is a dummy text</h1>
+</div>
+<div class="col-md-6" style="text-align: right;">
+    <button (click)="deleteUser()" class="btn btn-sm btn-danger btn-delete-user">
+        <span>Delete</span>
+    </button> 
+</div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 10%;font-weight: lighter;"></th>
+            <th style="width: 30%;font-weight: lighter;">User Name <i class="fa fa-sort" ></i></th>
+            <th style="width: 30%;font-weight: lighter;">Phone Number <i class="fa fa-sort"></i></th>
+            <th style="width: 30%;font-weight: lighter;">Email ID <i class="fa fa-sort"></i></th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td style="white-space: nowrap"><input type="checkbox" (change)="check(user.id,$event.target.checked)"></td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr *ngIf="!users">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,10 @@
+.welcome-logo{
+    text-align: start;
+    font-weight:bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+  }
+  .logo{
+    color: #c0392b !important;
+  }

@@ -1,0 +1,140 @@
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.digital{
+  font-size:40px;
+  font-weight: 200;
+}
+.digital-text{
+  font-size:14px;
+  color:grey;
+}
+.input {
+  border: 0.1px solid gray;
+}
+.user_card {
+  height: 400px;
+  width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #f39c12;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+
+}
+.brand_logo_container {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  top: -75px;
+  border-radius: 50%;
+  background: #60a3bc;
+  padding: 10px;
+  text-align: center;
+}
+.brand_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.form_container {
+  margin-top: 100px;
+}
+.login_btn {
+  width: 100%;
+  color: white !important;
+}
+.login_btn:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.login_container {
+  padding: 0 2rem;
+  background: #c0392b !important;
+}
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: .7rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: .375rem;
+  
+  border-right: 0 !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+  border-left: 0;
+  padding: 0 !important;
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.input_pass{
+  border-left: 0;
+  padding: 0 !important;
+}
+.custom-checkbox{
+  text-align: right;
+  
+}
+.custom-control-label,.Signup{
+  text-decoration: none;
+  color: gray;
+}
+.welcome{
+  text-align: center;
+  font-weight:bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #c0392b !important;
+  
+}
+.is-invalid{
+border-color: #c0392b;
+}
+.welcome-logo{
+  text-align: center;
+  font-weight:bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.logo{
+  color: #c0392b !important;
+}
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;  
+}
+::-moz-placeholder {
+  font-style: italic;  
+}
+:-ms-input-placeholder {  
+  font-style: italic; 
+}

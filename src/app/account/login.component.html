@@ -1,0 +1,67 @@
+<div class="mt-5">
+  <div class="row">
+    <div class=" col-md-5">
+      <div class="digital"><span style="font-weight: 600;">Digital</span> Platform for distance <span style="font-weight: 600;">learning</span></div>
+      <p class="digital-text">
+        internet and online based digital technologies such as desktop
+        computers,mobile phones and other
+      </p>
+    </div>
+    <div class=" col-md-3"></div>
+    <div class=" col-md-4">
+      <div class="card-body">
+        <div class="welcome-logo">
+          your <span class="logo">logo</span>	<span><sup style="font-size: 15px;">&reg;</sup></span>
+        </div>
+        <div class="welcome">
+          <i class="fa fa-lock 2xs"></i>
+        </div>
+        <div class="welcome">
+          Welcome back
+        </div>
+        
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="input-group mb-3">
+            <div class="input-group-append" >
+              <span class="input-group-text" [ngClass]="{ 'is-invalid': submitted && f.username.errors }"><i class="fa fa-user"></i></span>
+            </div>
+            <input type="text" name="" class="form-control input_user" formControlName="username"
+            [ngClass]="{ 'is-invalid': submitted && f.username.errors }" value="" placeholder="username">
+            <div
+              *ngIf="submitted && f.username.errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f.username.errors.required">Username is required</div>
+            </div>
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-append">
+              <span class="input-group-text" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"><i class="fa fa-lock"></i></span>
+            </div>
+            <input type="password" name="" formControlName="password"
+            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" class="form-control input_pass" value="" placeholder="password">
+            <div
+            *ngIf="submitted && f.password.errors"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f.password.errors.required">Password is required</div>
+          </div>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <a class="custom-control-label" for="customControlInline">Forgot Password ?</a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-3 login_container">
+          <button class="btn login_btn">Login</button>
+         </div>
+         <div class="d-flex justify-content-center mt-3">
+          <div class="Signup">
+            Don't have an Account?<a class="custom-control-label" routerLink="../register" for="customControlInline">Signup</a>
+          </div>
+         </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
